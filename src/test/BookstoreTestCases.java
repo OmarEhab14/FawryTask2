@@ -5,10 +5,10 @@ import books.EBook;
 import books.PaperBook;
 import core.Inventory;
 
-public class QuantumBookstoreTestCases {
+public class BookstoreTestCases {
     Inventory inventory;
 
-    public QuantumBookstoreTestCases() {
+    public BookstoreTestCases() {
         inventory = new Inventory();
     }
 

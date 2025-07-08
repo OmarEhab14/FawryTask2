@@ -1,8 +1,8 @@
-import test.QuantumBookstoreTestCases;
+import test.BookstoreTestCases;
 
 public class Main {
     public static void main(String[] args) {
-        QuantumBookstoreTestCases tester = new QuantumBookstoreTestCases();
+        BookstoreTestCases tester = new BookstoreTestCases();
 
         tester.testAddBooks();
         tester.testPrintInventory();
