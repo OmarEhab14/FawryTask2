@@ -34,7 +34,6 @@ public class Inventory {
                 iterator.remove();
             }
         }
-
         return outdatedBooks;
     }
 
@@ -47,12 +46,7 @@ public class Inventory {
         if (!(book instanceof Sellable)) {
             throw new RuntimeException("This book is not for sale");
         }
-        if (book instanceof PaperBook) {
-            ((PaperBook) book).reduceQuantity(quantity);
-            ShippingService.ship(address);
-        } else if (book instanceof EBook) {
-            MailingService.sendMail(email);
-        }
+        ((Sellable) book).processPayment(quantity, email, address);
         return quantity * book.getPrice();
     }
 
