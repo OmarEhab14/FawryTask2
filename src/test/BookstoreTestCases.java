@@ -1,6 +1,6 @@
 package test;
 
-import books.DemoBook;
+import books.ShowcaseBook;
 import books.EBook;
 import books.PaperBook;
 import core.Inventory;
@@ -16,11 +16,11 @@ public class BookstoreTestCases {
         System.out.println("\n--- Test: Add Books ---");
         PaperBook paperBook = new PaperBook("ISBN-123", "Clean Code", 2018, 300.0, 5);
         EBook eBook = new EBook("ISBN-456", "AI with Java", 2022, 150.0, "PDF");
-        DemoBook demoBook = new DemoBook("ISBN-789", "Rare Manuscript", 2000, 999.0);
+        ShowcaseBook showcaseBook = new ShowcaseBook("ISBN-789", "Showcase book", 2000, 0.0);
 
         inventory.addBook(paperBook);
         inventory.addBook(eBook);
-        inventory.addBook(demoBook);
+        inventory.addBook(showcaseBook);
     }
 
     public void testPrintInventory() {
@@ -48,8 +48,8 @@ public class BookstoreTestCases {
         }
     }
 
-    public void testBuyDemoBook() {
-        System.out.println("\n--- Test: Buy DemoBook (should fail) ---");
+    public void testBuyShowcaseBook() {
+        System.out.println("\n--- Test: Buy ShowcaseBook (should fail) ---");
         try {
             inventory.buy("ISBN-789", 1, "user@example.com", null);
         } catch (Exception e) {

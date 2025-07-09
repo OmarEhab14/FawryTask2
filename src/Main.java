@@ -8,7 +8,7 @@ public class Main {
         tester.testPrintInventory();
         tester.testBuyPaperBook();
         tester.testBuyEBook();
-        tester.testBuyDemoBook();
+        tester.testBuyShowcaseBook();
         tester.testBuyNonExistentBook();
         tester.testBuyWithInsufficientStock();
         tester.testRemoveOutdatedBooks();
