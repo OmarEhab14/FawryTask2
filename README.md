@@ -4,7 +4,7 @@ An object-oriented Java project that simulates an online bookstore called **Quan
 
 ## 🖼️ Demo Screenshots
 
-Here are screenshots of the Quantum Bookstore running in the terminal:
+Here are screenshots of the Bookstore task running in the terminal:
 
 ### 🧪 Application Run Output
 
